@@ -1,3 +1,5 @@
+/* global options */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,12 +11,15 @@
     scroll-behavior: smooth;
 }
 
+/* sticky menu */
+
 .sticky {
   position: -webkit-sticky;
 	position: sticky;
 	top: 0;
 }
 
+/* nav section */
 
 nav {
     display: flex;
@@ -54,6 +59,48 @@ nav .nav-list .nav-link {
     font-size: 18px;
     font-weight: 500;
 }
+
+nav .navbar-toggler {   /* hamburger menu (mobile first)*/
+  display: none;
+  height: min-content;
+  margin: 18px -10px 0 0;
+  cursor: pointer;
+}
+
+nav .navbar-toggler .bar {
+  width: 40px;
+  height: 5px;
+  margin-bottom: 10px;
+  background: #ffffff;
+  border-radius: 10%;
+  transition: .4s;
+}
+
+input#toggle {
+  display: none;
+}
+
+input:checked ~ nav .nav-list {
+  transform: translateY(0);
+}
+
+input:checked ~ nav .navbar-toggler {
+  margin-top: 35px;
+}
+
+input:checked ~ nav .navbar-toggler .bar:nth-child(1) {
+  position: absolute;
+  transform: rotate(45deg);
+}
+
+input:checked ~ nav .navbar-toggler .bar:nth-child(2) {
+ display: none;
+}
+
+input:checked ~ nav .navbar-toggler .bar:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
 
 /* wordcloud section */
 
@@ -185,7 +232,7 @@ main {
     font-size: 5rem;
   }
   
-  .parallax::after {
+  .parallax::after {    /* parallax animation */
     content: " ";
     position: absolute;
     top: 0;
@@ -198,24 +245,30 @@ main {
   }
 
   .bg1 h2 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   
   .bg1::after {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("https://picsum.photos/1080/720");
+      url("/assets/media/bg-2.jpg");
     background-size: cover;
   }
 
   .bg2::after {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("https://picsum.photos/1080/720");
+      url("/assets/media/bg-1.jpeg");
     background-size: cover;
   }
 
   .bg3::after {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("https://picsum.photos/1080/720");
+      url("/assets/media/bg-3.jpg");
+    background-size: cover;
+  }
+
+  .bg4::after {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("/assets/media/bg-4.jpeg");
     background-size: cover;
   }
 
@@ -409,7 +462,6 @@ img {
 .overlay {
   position: absolute; 
   background: rgba(57, 57, 57, 0.5);
-  
   /* center overlay text */
   display: flex;
   flex-direction: column;
@@ -511,7 +563,6 @@ textarea:hover {
   height: 50px;
   padding: 0;
   margin: -5px 0px 0px 0px;
-  /* font-family: 'Lato', sans-serif; */
   font-size: 1em;
   color: #b3aca7;
   outline:none;
@@ -717,43 +768,3 @@ textarea:hover {
 }
 
 
-nav .navbar-toggler {
-    display: none;
-    height: min-content;
-    margin: 18px -10px 0 0;
-    cursor: pointer;
-}
-
-nav .navbar-toggler .bar {
-    width: 40px;
-    height: 5px;
-    margin-bottom: 10px;
-    background: #ffffff;
-    border-radius: 10%;
-    transition: .4s;
-}
-
-input#toggle {
-    display: none;
-}
-
-input:checked ~ nav .nav-list {
-    transform: translateY(0);
-}
-
-input:checked ~ nav .navbar-toggler {
-    margin-top: 35px;
-}
-
-input:checked ~ nav .navbar-toggler .bar:nth-child(1) {
-    position: absolute;
-    transform: rotate(45deg);
-}
-
-input:checked ~ nav .navbar-toggler .bar:nth-child(2) {
-   display: none;
-}
-
-input:checked ~ nav .navbar-toggler .bar:nth-child(3) {
-    transform: rotate(-45deg);
-}
