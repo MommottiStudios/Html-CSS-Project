@@ -256,19 +256,19 @@ main {
 
   .bg2::after {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("/assets/media/bg-1.jpeg");
+      url("/Html-CSS-Project/assets/media/bg-1.jpeg");
     background-size: cover;
   }
 
   .bg3::after {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("/assets/media/bg-3.jpg");
+      url("/Html-CSS-Project/assets/media/bg-3.jpg");
     background-size: cover;
   }
 
   .bg4::after {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("/assets/media/bg-4.jpeg");
+      url("/Html-CSS-Project/assets/media/bg-4.jpeg");
     background-size: cover;
   }
 
