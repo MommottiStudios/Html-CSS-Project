@@ -250,13 +250,13 @@ main {
   
   .bg1::after {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("/Html-CSS-Project/assets/media/bg-2.jpg");
+      url("/Html-CSS-Project/assets/media/bg-1.jpg");
     background-size: cover;
   }
 
   .bg2::after {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("/Html-CSS-Project/assets/media/bg-1.jpeg");
+      url("/Html-CSS-Project/assets/media/bg-2.jpeg");
     background-size: cover;
   }
 
