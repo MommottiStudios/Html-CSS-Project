@@ -250,7 +250,7 @@ main {
   
   .bg1::after {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("/assets/media/bg-2.jpg");
+      url("/Html-CSS-Project/assets/media/bg-2.jpg");
     background-size: cover;
   }
 
