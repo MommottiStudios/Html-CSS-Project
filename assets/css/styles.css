@@ -622,6 +622,11 @@ textarea:hover {
   height: 5vw;
 }
 
+.parallax >.more a:link, a:visited, a:hover, a:active {
+  color: white;
+  text-decoration: underline;
+}
+
 /* ----- media queries ----- */
 
 @media (max-width: 935px) {
