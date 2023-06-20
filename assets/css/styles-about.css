@@ -250,25 +250,25 @@ main {
   
   .bg1::after {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("/Html-CSS-Project/assets/media/bg-1.jpeg");
+    url("../media/bg-2.jpg");
     background-size: cover;
   }
 
   .bg2::after {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("/Html-CSS-Project/assets/media/bg-2.jpeg");
+      url("../media/bg-1.jpeg");
     background-size: cover;
   }
 
   .bg3::after {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("/Html-CSS-Project/assets/media/bg-3.jpg");
+      url("../media/bg-3.jpg");
     background-size: cover;
   }
 
   .bg4::after {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("/Html-CSS-Project/assets/media/bg-4.jpeg");
+      url("../media/bg-4.jpeg");
     background-size: cover;
   }
 
@@ -330,6 +330,13 @@ main {
 .footer {
   height: 5vw;
 }
+
+
+.me h3 {
+  font-size: 0.8rem;
+  padding: 0 20px;
+}
+
 
 /* ----- media queries ----- */
 
@@ -485,6 +492,10 @@ main {
     flex-direction: row;
     padding: 0 100;
     height: 40vh;
+}
+
+.me h3 {
+  font-size: 1.5rem;
 }
 
 }
